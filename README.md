@@ -60,8 +60,3 @@ The implementation uses minimal external dependencies:
 - com.opencsv to import Csv
 - org.apache.commons to use JaroWinkler match
 
-## Performance Considerations
-
-- Field normalization could be applied before comparison to improve match quality
-- Early termination for obvious non-matches reduces processing time
-- Optimized for in-memory processing of moderate-sized datasets
