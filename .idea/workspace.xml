@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cbec082-d167-4570-8d36-a4eaf14fccfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/JaroWinklerComparer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/JaroWinklerComparer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ContactTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +57,7 @@
       <recent name="D:\Workspace\Compass\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.ContactTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.lucentininicolas.Main" />
       <module name="Compass" />
@@ -116,9 +112,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ContactTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ContactComparerTest.shouldReturnAResponseOnlyWithHigh" />
-        <item itemvalue="JUnit.ContactTest" />
         <item itemvalue="JUnit.ContactTest.twoMediumContactShouldReturnMedium" />
         <item itemvalue="JUnit.ContactTest.twoDifferentsContactShouldNotBeSimilar" />
       </list>

@@ -65,7 +65,6 @@ public class Contact {
     }
     public double compare(Contact other){
         //The highest the value the better
-        //if
         //name => 10 points
         //lastName => 10points
         //email =>100 points
@@ -78,20 +77,20 @@ public class Contact {
         double zipcodeValue = JaroWinklerComparer.compare(zipCode, other.zipCode) ;
         double addressValue = JaroWinklerComparer.compare(address, other.address) * 100;
 
+
         if(emailValue == 100 || addressValue == 100){
             return 221;
         }
-        //System.out.println("NameValue " + nameValue + " LastName: "+lastNameValue + " email " + emailValue
-        //+ " zipcode " + zipcodeValue + " add " +addressValue );
         return nameValue + lastNameValue + emailValue + zipcodeValue + addressValue;
     }
     public String isSimilar(Contact other){
         double compare = compare(other);
+        double normalized = compare / 221;
         System.out.println("Compare results " + compare);
-        if(compare>200){
+        if(normalized>0.8){
             return "HIGH";
         }
-        else if(compare>150 ){
+        else if(normalized>0.5 ){
             return "MEDIUM";
         }
         return "LOW";
