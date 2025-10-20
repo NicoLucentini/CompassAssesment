@@ -63,14 +63,17 @@ public class Contact {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    //Compares against another contact
+    //The highest the value the better
+    //name => 10 points
+    //lastName => 10points
+    //email =>100 points
+    //zipcode =>1 points
+    //address => 100 points
+    //max 221
     public double compare(Contact other){
-        //The highest the value the better
-        //name => 10 points
-        //lastName => 10points
-        //email =>100 points
-        //zipcode =>1 points
-        //address => 100 points
-        //max 230
+
         double nameValue = JaroWinklerComparer.compare(firstName, other.firstName) * 10;
         double lastNameValue = JaroWinklerComparer.compare(lastName, other.lastName) * 10;
         double emailValue = JaroWinklerComparer.compare(emailAddress, other.emailAddress) * 100;
@@ -83,10 +86,13 @@ public class Contact {
         }
         return nameValue + lastNameValue + emailValue + zipcodeValue + addressValue;
     }
+    //After comparing returns the accuracy based on how much is close
+    //0.8> HIGH
+    //0.5> MEDIUM
+    //0.5<=LOW
     public String isSimilar(Contact other){
         double compare = compare(other);
         double normalized = compare / 221;
-        System.out.println("Compare results " + compare);
         if(normalized>0.8){
             return "HIGH";
         }
