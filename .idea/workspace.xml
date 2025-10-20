@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cbec082-d167-4570-8d36-a4eaf14fccfe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/JaroWinklerComparer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/JaroWinklerComparer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lucentininicolas/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ContactTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +38,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.ContactComparerTest.shouldReturnAResponse.executor": "Run",
+    "JUnit.ContactComparerTest.shouldReturnAResponseOnlyWithHigh.executor": "Run",
     "JUnit.ContactTest.executor": "Run",
+    "JUnit.ContactTest.twoDifferentsContactShouldNotBeSimilar.executor": "Run",
     "JUnit.ContactTest.twoDifferentsContactShouldReturn_230.executor": "Run",
     "JUnit.ContactTest.twoEqualsContactShouldReturn_230.executor": "Run",
+    "JUnit.ContactTest.twoMediumContactShouldReturnMedium.executor": "Run",
+    "JUnit.ContactTest.twoSimilarContactsShouldreturnHIGH.executor": "Run",
     "JUnit.CsvImporterTest.executor": "Run",
     "JUnit.CsvImporterTest.testReadFile_ValidCSV_ReturnsListOfPersons.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "onboarding.tips.debug.path": "D:/Workspace/Compass/src/main/java/org/lucentininicolas/Main.java"
   }
@@ -56,7 +61,30 @@
       <recent name="D:\Workspace\Compass\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ContactTest">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.lucentininicolas.Main" />
+      <module name="Compass" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.lucentininicolas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactComparerTest.shouldReturnAResponseOnlyWithHigh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Compass" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ContactComparerTest" />
+      <option name="METHOD_NAME" value="shouldReturnAResponseOnlyWithHigh" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Compass" />
       <option name="PACKAGE_NAME" value="" />
@@ -66,40 +94,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactTest.twoDifferentsContactShouldReturn_230" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactTest.twoDifferentsContactShouldNotBeSimilar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Compass" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContactTest" />
-      <option name="METHOD_NAME" value="twoDifferentsContactShouldReturn_230" />
+      <option name="METHOD_NAME" value="twoDifferentsContactShouldNotBeSimilar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactTest.twoEqualsContactShouldReturn_230" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactTest.twoMediumContactShouldReturnMedium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Compass" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContactTest" />
-      <option name="METHOD_NAME" value="twoEqualsContactShouldReturn_230" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CsvImporterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Compass" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CsvImporterTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CsvImporterTest.testReadFile_ValidCSV_ReturnsListOfPersons" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Compass" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CsvImporterTest" />
-      <option name="METHOD_NAME" value="testReadFile_ValidCSV_ReturnsListOfPersons" />
+      <option name="METHOD_NAME" value="twoMediumContactShouldReturnMedium" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ContactComparerTest.shouldReturnAResponseOnlyWithHigh" />
         <item itemvalue="JUnit.ContactTest" />
-        <item itemvalue="JUnit.ContactTest.twoDifferentsContactShouldReturn_230" />
-        <item itemvalue="JUnit.ContactTest.twoEqualsContactShouldReturn_230" />
-        <item itemvalue="JUnit.CsvImporterTest" />
-        <item itemvalue="JUnit.CsvImporterTest.testReadFile_ValidCSV_ReturnsListOfPersons" />
+        <item itemvalue="JUnit.ContactTest.twoMediumContactShouldReturnMedium" />
+        <item itemvalue="JUnit.ContactTest.twoDifferentsContactShouldNotBeSimilar" />
       </list>
     </recent_temporary>
   </component>
@@ -125,16 +134,5 @@
       <updated>1760971084438</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/lucentininicolas/Main.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

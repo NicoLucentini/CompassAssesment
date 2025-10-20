@@ -1,17 +1,25 @@
 package org.lucentininicolas;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.net.URISyntaxException;
+import java.net.URL;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+    public static void main(String[] args) throws URISyntaxException {
+
+        URL resource = Main.class.getResource("/data.csv");
+        Path path = Paths.get(resource.toURI());
+
+        //Contact parsing
+        List<Contact> contacts = CsvImporter.readFile(path.toString(), Contact.class);
+
+        List<ContactCompareResult> results = ContactComparer.compareContacts(contacts, ComparerFilter.HIGH);
+
+        for(int i = 0;i< results.size();i++){
+            System.out.println(results.get(i).toString());
         }
+
     }
 }

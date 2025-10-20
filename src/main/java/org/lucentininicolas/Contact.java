@@ -69,20 +69,32 @@ public class Contact {
         //name => 10 points
         //lastName => 10points
         //email =>100 points
-        //zipcode =>10 poitns
+        //zipcode =>1 points
         //address => 100 points
         //max 230
         double nameValue = JaroWinklerComparer.compare(firstName, other.firstName) * 10;
         double lastNameValue = JaroWinklerComparer.compare(lastName, other.lastName) * 10;
         double emailValue = JaroWinklerComparer.compare(emailAddress, other.emailAddress) * 100;
-        double zipcodeValue = JaroWinklerComparer.compare(zipCode, other.zipCode) * 10;
+        double zipcodeValue = JaroWinklerComparer.compare(zipCode, other.zipCode) ;
         double addressValue = JaroWinklerComparer.compare(address, other.address) * 100;
-        System.out.println("NameValue " + nameValue + " LastName: "+lastNameValue + " email " + emailValue
-        + " zipcode " + zipcodeValue + " add " +addressValue );
+
+        if(emailValue == 100 || addressValue == 100){
+            return 221;
+        }
+        //System.out.println("NameValue " + nameValue + " LastName: "+lastNameValue + " email " + emailValue
+        //+ " zipcode " + zipcodeValue + " add " +addressValue );
         return nameValue + lastNameValue + emailValue + zipcodeValue + addressValue;
     }
-    public boolean isSimilar(Contact other){
-        return compare(other)>200;
+    public String isSimilar(Contact other){
+        double compare = compare(other);
+        System.out.println("Compare results " + compare);
+        if(compare>200){
+            return "HIGH";
+        }
+        else if(compare>150 ){
+            return "MEDIUM";
+        }
+        return "LOW";
     }
 
 }
